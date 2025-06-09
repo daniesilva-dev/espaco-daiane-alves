@@ -1,0 +1,184 @@
+/* Prices Page Styles */
+.prices-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.prices-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.contact-info-header h1 {
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info-header p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.contact-info-header p i {
+    margin-right: 8px;
+    color: #512549;
+}
+
+.price-category {
+    margin-bottom: 40px;
+}
+
+.price-category h2 {
+    font-size: 1,25rem;
+    font-family: 'Playfair Display', serif;
+    color: #512549;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #7310610e;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee;
+    transition: background-color 0.3s ease;
+}
+
+.price-item:hover {
+    background-color: #f9f9f9;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-item span:first-child {
+    font-weight: 500;
+    color: #555;
+    flex-grow: 1;
+}
+
+.price-item span:last-child {
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.note-category {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+    color: rgb(192, 11, 11);
+}
+
+.payment-methods {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.payment-methods h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #512549;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-methods p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.payment-methods p strong {
+    color: #333;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.payment-icons i {
+    font-size: 2rem;
+    color: #512549;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .prices-container {
+        margin: 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .prices-container {
+        padding: 20px;
+    }
+    
+    .contact-info-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .price-category h2,
+    .payment-methods h2 {
+        font-size: 1.5rem;
+    }
+    
+    .price-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .price-item span:last-child {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .prices-section {
+        padding: 40px 0;
+    }
+    
+    .contact-info-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .price-category h2,
+    .payment-methods h2 {
+        font-size: 1.5.prices-containerrem;
+    }
+    
+    .price-item span:first-child {
+        font-size: 0.9rem;
+    }
+} 
